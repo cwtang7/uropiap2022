@@ -1,0 +1,19 @@
+{
+  "name": "uropiap2022",
+  "version": "1.0.0",
+  "description": "sms based user feedback system for D-Lab's clay pot cooler users in Mali",
+  "main": "server.js",
+  "scripts": {
+    "test": "server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwtang7/uropiap2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwtang7/uropiap2022/issues"
+  },
+  "homepage": "https://github.com/cwtang7/uropiap2022#readme"
+}
