@@ -4,7 +4,8 @@
   "description": "sms based user feedback system for D-Lab's clay pot cooler users in Mali",
   "main": "server.js",
   "scripts": {
-    "test": "server.js"
+    "test": "server.js",
+    "start":"node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/cwtang7/uropiap2022/issues"
   },
-  "homepage": "https://github.com/cwtang7/uropiap2022#readme"
+  "homepage": "https://github.com/cwtang7/uropiap2022#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "xlsx": "^0.17.4"
+  }
 }
