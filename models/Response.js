@@ -2,8 +2,7 @@ const mongoose=require("mongoose");
 const responseSchema=new mongoose.Schema({
     phoneNumber: String,
     //content:[String]
-    type: {content:[String],
-        default: []}
+ content:[String]
 })
 
 

@@ -54,12 +54,12 @@ app.post("/hook", (req, res) => {
   Response.exists({ phoneNumber: userphoneNum }).then((phoneNumExist)=>{
     if(phoneNumExist){
 //const res = await Response.updateOne({ name: 'Jean-Luc Picard' }, { ship: 'USS Enterprise' });
-      Response.find({phoneNumber:userphoneNum}).then((response)=>{
-      console.log(typeof response.content);
+      Response.findOne({phoneNumber:userphoneNum}).then((response)=>{
       response.content.push(req.body.content);
+   
       response.save().then((result)=>{
-        console.log(result) // Call your action on the request here
-        res.send(res.status)
+        console.log(result); // Call your action on the request here
+        res.send(result);
       });
     });
     }else{
@@ -69,7 +69,7 @@ app.post("/hook", (req, res) => {
     });
     newResponse.save().then((response)=>{
       console.log(req.body); // Call your action on the request here
-      res.sendStatus(200);
+      res.send(req.body);
     });
   }
 });
